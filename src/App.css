@@ -1,0 +1,11 @@
+/* Asegura que el body ocupe toda la altura de la ventana */
+html, body, #root, .app {
+    height: 100%;
+}
+
+/* Flexbox para el contenedor principal */
+.app {
+    display: flex;
+    flex-direction: column;
+}
+

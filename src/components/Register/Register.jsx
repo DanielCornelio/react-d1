@@ -58,7 +58,7 @@ const Register = () => {
     }
 
     return (
-        <Form className="my-5" onSubmit={handleResult}> 
+        <Form className="my-5" onSubmit={handleResult} > 
             <Container >
                 <Row className="justify-content-md-center">
                     <Col md={7} className="center">
