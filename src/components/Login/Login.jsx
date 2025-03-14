@@ -67,7 +67,7 @@ const Login = () => {
                         </Form.Group>
 
                         <Button variant="primary" type="submit">
-                            Submit
+                            Enviar
                         </Button>
                     </Col>
                 </Row>
