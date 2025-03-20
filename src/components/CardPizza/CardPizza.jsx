@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import {Card, ListGroup} from "react-bootstrap";
 
 const CardPizza = ({ name, price, ingredients, img }) => {
   return (
@@ -12,9 +12,15 @@ const CardPizza = ({ name, price, ingredients, img }) => {
         <Card.Subtitle className="text-muted text-center mb-3">
           Ingredientes:
         </Card.Subtitle>
-        <Card.Text className="text-center">
-          🍕 {ingredients.join(", ")}
-        </Card.Text>
+        
+          <ListGroup>
+            {
+              ingredients.map((ingredient)=>(
+                <ListGroup.Item key={ingredient}>🍕 {ingredient}</ListGroup.Item>
+              ))
+            }
+          </ListGroup>
+       
         <hr />
         <h5 className="text-center mb-3">
           Precio: ${price.toLocaleString("es-CL")}
