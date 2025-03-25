@@ -1,0 +1,8 @@
+html, body, #root, .app{
+    height: calc(100% - 53px);
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+}

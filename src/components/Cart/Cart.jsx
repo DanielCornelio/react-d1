@@ -33,7 +33,7 @@ const Cart = () => {
   }, 0);
 
   return (
-    <div className="my-5">
+    <div className="my-5 app">
       <Container>
         <Row className="justify-content-md-center">
           <Col md={9}>
@@ -56,7 +56,7 @@ const Cart = () => {
                 ))
               }
             </ListGroup>
-            <h3>Total: {totalPrice}</h3>
+            <h3>Total:$ {totalPrice.toLocaleString("es-CL")}</h3>
             <Button variant='dark'>Pagar</Button>
           </Col>
         </Row>
