@@ -10,13 +10,13 @@ const CardPizza = ({ name, price, ingredients, img }) => {
         <Card.Title>{name}</Card.Title>
         <hr />
         <Card.Subtitle className="text-muted text-center mb-3">
-          Ingredientes:
+        🍕 Ingredientes:
         </Card.Subtitle>
         
           <ListGroup>
             {
               ingredients.map((ingredient)=>(
-                <ListGroup.Item key={ingredient}>🍕 {ingredient}</ListGroup.Item>
+                <ListGroup.Item key={ingredient} className="">{ingredient}</ListGroup.Item>
               ))
             }
           </ListGroup>
