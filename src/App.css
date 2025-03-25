@@ -1,5 +1,5 @@
 html, body, #root, .app{
-    height: calc(100% - 53px);
+    height: 100%;
 }
 
 .app{
